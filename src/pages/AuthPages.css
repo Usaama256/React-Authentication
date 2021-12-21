@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(to right, #99004d 0%, 100%);
+}
+::selection {
+  background: #ff80bf;
+}
+.container {
+  background: #fff;
+  max-width: 350px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+.container form .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+.container form .title:before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 33px;
+  left: 0px;
+  bottom: 3px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+.container form .inputBox {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+.container form .emailInput {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+.emailInput::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+.emailInput::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+.container form .emailInput input:focus ~ .emailInput::after,
+.container form .emailInput input:valid ~ .emailInput::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.container form .inputBox input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+.container form .emailInput input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+.container form .underline::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+.container form .underline::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+.btnsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.btnRed {
+  margin-top: 10px 10px;
+  margin-left: 5px;
+  padding: 5px;
+  font-size: 1rem;
+  transition: all 0.3s linear;
+  background-color: rgb(255, 69, 36);
+  border: 1.5px solid rgb(255, 69, 36);
+  color: rgb(237, 246, 253);
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+.btnRed:hover {
+  background-color: rgb(237, 246, 253);
+  border: 1.5px solid rgb(255, 69, 36);
+  color: rgb(255, 69, 36);
+}
+.btnBlue {
+  margin-top: 10px 10px;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 1rem;
+  transition: all 0.3s linear;
+  background-color: rgb(36, 160, 255);
+  border: 1.5px solid rgb(36, 160, 255);
+  color: white;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+.btnBlue:hover {
+  background-color: white;
+  border: 1.5px solid rgb(36, 160, 255);
+  color: rgb(36, 160, 255);
+}
+.message {
+  color: green;
+  font-weight: 600;
+}
+.container form .inputBox input:focus ~ .underline::after,
+.container form .inputBox input:valid ~ .underline::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.container form .button {
+  margin: 40px 0 20px 0;
+}
+.container .inputBox input[type="submit"] {
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.container .inputBox input[type="submit"]:hover {
+  letter-spacing: 1px;
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+}
+.container .option {
+  font-size: 14px;
+  text-align: center;
+}
+.option a {
+  text-decoration: none;
+  color: #99004d;
+}
+.error {
+  color: red;
+  font-weight: 600;
+}

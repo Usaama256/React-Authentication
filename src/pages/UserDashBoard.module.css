@@ -1,0 +1,40 @@
+.container {
+  background: #fff;
+  max-width: 350px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+h2 {
+  margin-bottom: 20px;
+}
+.logout {
+  color: #99004d;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.btnEditProfile {
+  margin: 20px 10px;
+  width: 100%;
+  padding: 5px;
+  font-size: 1rem;
+  transition: all 0.3s linear;
+  background-color: #99004d;
+  border: 1.5px solid #99004d;
+  color: rgb(237, 246, 253);
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+.btnEditProfile:hover {
+  background-color: rgb(237, 246, 253);
+  border: 1.5px solid #99004d;
+  color: #99004d;
+}
+.error {
+  color: red;
+  font-weight: 600;
+}
